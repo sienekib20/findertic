@@ -1,0 +1,6 @@
+vendor/
+.env
+.vscode
+.phpstorm
+.phpintel
+node_modules/

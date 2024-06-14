@@ -1,0 +1,16 @@
+{
+    "name": "sienekib/struct",
+    "authors": [
+        {
+            "name": "sienekib20",
+            "email": "sienekib@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Sienekib\\Proto\\": "proto/src/"
+        }
+    }
+}

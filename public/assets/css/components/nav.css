@@ -1,0 +1,86 @@
+#typos05x-header {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}#typos05x-header::after, #typos05x-header img {
+ 	content: '';
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	position: absolute;
+ 	background: linear-gradient(to right, #000, rgba(0, 0, 0, 0.1));
+ }
+ #typos05x-header img {
+ 	object-fit: cover;
+ 	object-position: right;
+ }
+ #typos05x-header .container { height: 90%;  }
+ .s05xheader-caption {
+ 	padding-top: 2rem;
+ 	position: relative; z-index: 11;
+ }
+
+ .s05xheader-caption .s05xheader-titled {
+	color: #fdfdfd;
+		font-size: 1.8rem;
+		font-family: 'Onest-Bold';
+		line-height: 2rem;
+	}
+
+	.s05xheader-caption .s05xheader-titled + span {
+		font-family: 'Onest-Light';
+		margin-top: 2rem;
+		color: rgba(255, 255, 255, 0.8) !important;
+	} @media (max-width: 768px) {
+		.s05xheader-caption .s05xheader-titled {
+			font-size: 1.2rem;
+			line-height: 1.5rem;
+		}
+		.sitename {
+			font-size: 1.2rem !important;
+		}
+	}
+.sitename {
+	z-index: 11;
+	position: relative;
+	color: #fff;
+	font-family: 'Onest-Bold';
+	font-size: 1.5rem;
+	gap: 5px;
+}
+.s05xheader-actions { position: relative; z-index: 11; }
+	.s05xheader-actions-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-right-color: #fff;
+		color: #fff;
+		z-index: 11;
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.2);
+		transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out, color 0.25s ease-in-out;
+	} .s05xheader-actions-link:hover { background-color: #F1634D; color: #F1634D; border-color: transparent;  }
+	.s05xheader-actions-link [class*='bi-'] {
+		height: 65%;
+		height: 65%;
+		border-radius: 50%;
+		aspect-ratio: 1/1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #F1634D;
+		pointer-events: none;
+		transition: background-color 0.25s ease-in-out;
+	} .s05xheader-actions-link:hover [class*='bi-'] { background-color: #fff;  }
+	.s05xheader-actions-link.alt:hover { background-color: #96f !important;  }
+	.s05xheader-actions-link.alt { background-color: #65f !important; color: #fff !important; border-color: transparent !important; }
+	.s05xheader-actions-link.alt [class*='bi-'] { background-color: transparent !important; }

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url('./bundle/Jost-Bold.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Jost-Light';
+    src: url('./bundle/Jost-Light.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url('./bundle/Jost-Regular.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Onest-Bold';
+    src: url('./bundle/Onest-Bold.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Onest-Light';
+    src: url('./bundle/Onest-Light.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Onest-Regular';
+    src: url('./bundle/Onest-Regular.ttf');
+    font-style: normal;
+    display: swap;
+}
