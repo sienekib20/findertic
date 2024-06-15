@@ -55,15 +55,15 @@
 
       <div class="col-lg-4 mt-4 mt-lg-0">
         <div class="footer-header">
-          <span class="hd-title text-white text-uppercase d-flex jc-end">Servicos</span>
-          <small class="text-muted d-block line-height-1 mt-3 d-flex jc-end">Temos muito pra ti.</small>
+          <span class="hd-title text-white text-uppercase d-flex jc-start jc-xl-end">Servicos</span>
+          <small class="text-muted d-block line-height-1 mt-3 d-flex jc-start jc-xl-end">Temos muito pra ti.</small>
           <div class="footer-contain mt-4">
-            <a href="" class="d-flex ai-center jc-end text-muted"> <small>Manutencao & reparacao de impressoras</small> </a>
-            <a href="" class="d-flex ai-center jc-end text-muted"> <small>Desenvolvimento de Software</small> </a>
-            <a href="" class="d-flex ai-center jc-end text-muted"> <small>Montagem de Rede</small> </a>
-            <a href="" class="d-flex ai-center jc-end text-muted"> <small>Formacao Tecnico & Profissional</small> </a>
-            <a href="" class="d-flex ai-center jc-end text-muted"> <small>Instalacao de Aplicativos</small> </a>
-            <a href="" class="d-flex ai-center jc-end text-muted"> <small>Explora mais</small> </a>
+            <a href="" class="d-flex ai-center jc-start jc-xl-end text-muted"> <small>Manutencao & reparacao de impressoras</small> </a>
+            <a href="" class="d-flex ai-center jc-start jc-xl-end text-muted"> <small>Desenvolvimento de Software</small> </a>
+            <a href="" class="d-flex ai-center jc-start jc-xl-end text-muted"> <small>Montagem de Rede</small> </a>
+            <a href="" class="d-flex ai-center jc-start jc-xl-end text-muted"> <small>Formacao Tecnico & Profissional</small> </a>
+            <a href="" class="d-flex ai-center jc-start jc-xl-end text-muted"> <small>Instalacao de Aplicativos</small> </a>
+            <a href="" class="d-flex ai-center jc-start jc-xl-end text-muted"> <small>Explora mais</small> </a>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@
       </div>
       <div class="col-lg-4 my-4 my-lg-0">
         <small>
-          <img src="/img/payment.png" alt="">
+          <img src="{{ asset('img/payment.png') }}" alt="">
         </small>
       </div>
     </div>

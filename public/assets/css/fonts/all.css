@@ -39,3 +39,24 @@
     font-style: normal;
     display: swap;
 }
+
+@font-face {
+    font-family: 'Nunito-Light';
+    src: url('./bundle/NunitoSans_10pt-Light.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('./bundle/NunitoSans_10pt-Regular.ttf');
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url('./bundle/NunitoSans_10pt-Bold.ttf');
+    font-style: normal;
+    display: swap;
+}

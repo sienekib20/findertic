@@ -8,7 +8,6 @@ class AppController extends AbstracController
 {
 	public function index($helpers)
 	{
-		$name = 'siene';
-		return $helpers->view('site.welcome');
+		$helpers->view('site.welcome');
 	}
 }
