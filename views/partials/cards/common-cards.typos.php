@@ -25,9 +25,12 @@
 
 
 <script>
-	$('[name="trig-cardPopup"]').click((e) => {
-		e.preventDefault();
-		$('.popup-cards').addClass('active');
-		$('.popup-contain').addClass('active');
+	$(document).ready(function() {
+		$('[name="trig-cardPopup"]').click((e) => {
+			e.preventDefault();
+			$('.popup-cards').addClass('active');
+			$('.popup-contain').addClass('active');
+			$('body').css('overflow', 'hidden');
+		});
 	});
 </script>

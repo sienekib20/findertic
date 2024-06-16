@@ -176,3 +176,23 @@
 		color: #000;
 		font-family: 'Onest-Light';
 	}
+
+.back-to {
+	right: -100%;
+	bottom: 10%;
+	position: fixed;
+	background-color: #EA4335;
+	color: #fff;
+	outline: none;
+	border: 1px solid transparent;
+	padding: 0.476rem 1rem;
+	z-index: 1909;
+	border-radius: 0.25rem 0 0 0.25rem;
+	transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, right 0.8s ease-in-out;
+} .back-to:hover {
+		background-color: #DA3325;
+	} /*.back-to:hover, .back-to:focus {*/
+	 .back-to:hover {
+			box-shadow: 0 0 0 0.2rem rgba(234, 67, 53, 0.4);
+		}
+.back-to.active { right: 0;  }

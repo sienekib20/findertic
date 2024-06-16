@@ -1,9 +1,10 @@
 {{ partial('cards.popup-cards') }}
+{{ partial('nav.back-totop') }}
 
 <nav class="navibar">
   <div class="container w-80">
     <a href="" class="typos05x-brand text-black hd-title">
-    	<span>buseq tic</span>
+    	<span>equitic</span>
     </a>
     <div class="navi-items">
     	<a href="" class="navi-link">Inicio</a>

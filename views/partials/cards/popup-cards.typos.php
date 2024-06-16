@@ -32,9 +32,18 @@
 
 
 <script>
-	$('.popup-cards').click((e) => {
-		if (e.target.classList.contains('popup-cards')) {
-			$('.popup-cards').removeClass('active');
-		}
-	}); $('.popup-close').click((e) => { $('.popup-cards').removeClass('active'); })
+	$(document).ready(function() {
+		$('.popup-cards').click((e) => {
+			if (e.target.classList.contains('popup-cards')) {
+				rmActiveClasse()
+			}
+		});
+		$('.popup-close').click((e) => rmActiveClasse());
+	});
+
+	function rmActiveClasse() {
+		$('body').css('overflow', 'auto');
+		$('.popup-cards').removeClass('active');
+		$('.popup-contain').removeClass('active');
+	}
 </script>

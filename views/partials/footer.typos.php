@@ -9,7 +9,7 @@
         <div class="footer-header">
           <div class="logo">
             <span class="bi-hdd-network text-white"></span>
-            <h5 class="hd-title text-white ml-1">buseq tic</h5>
+            <h5 class="hd-title text-white ml-1">equitic</h5>
           </div>
           <span class="text-muted d-block mt-3 line-height-1">Explore, encontre, e obtenha o equipamento tecnologico adequado.</span>
         </div>
