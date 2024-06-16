@@ -257,3 +257,87 @@ label {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.z-index-ultimate {
+	z-index: 1808 !important;
+}
+
+.myselect {
+	width: 100%;
+	z-index: 11;
+	position: relative;
+} .myselect .myselect-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.75rem 0.75rem;
+		cursor: pointer;
+	} .myselect-header * {
+			pointer-events: none;
+		} .myselect-header.active [class*="bi"] { transform: rotate(180deg); }
+		.myselect-header.active [class*="bi"] { transition: 0.4s ease-in-out;  }
+	.myselect-options {
+		width: 100%;
+		top: 145%;
+		height: 135px;
+		position: absolute;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		overflow-y: auto;
+		opacity: 0;
+		pointer-events: none;
+		border-radius: 0.25rem;
+	} .myselect-option {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			height: 45px;
+			min-height: 45px;
+			padding: 0 0.75rem;
+			cursor: pointer;
+			color: #333;
+		}
+		.myselect-option:hover {
+			color: #000;
+			background-color: rgba(0, 0, 0, 0.04);
+		} .myselect-option.active {
+				color: #fff !important;
+				background-color: #EA4335 !important;
+			}
+	.myselect-options.active {
+		opacity: 1;
+		pointer-events: all;
+		animation: showOptions 0.4s ease-in-out forwards;
+	} @keyframes showOptions { to { top: 115%; } }
+
+.mymumber {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} .mymumber input {
+		outline: none;
+		width: 20%;
+		padding: 0.55rem 0.75rem;
+		text-align: center;
+		border: 1px solid transparent;
+	}
+	.mymumber span {
+		width: 25%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		padding: 0.75rem 0;
+		transition: background-color 0.2s ease-in-out;
+	} .mymumber span:hover { background-color: rgba(0, 0, 0, 0.02);  }
+
+.customized-input,
+.customized-btn {
+	border-radius: 0px !important;
+}

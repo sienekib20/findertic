@@ -1,0 +1,104 @@
+.carttable {
+	width: 100%;
+	position: relative;
+	overflow-x: auto;
+	white-space: nowrap;
+} .carttable-contain {
+		width: 100%;
+		min-width: 690px;
+		position: relative;
+	}
+	.carttable-header {
+		display: flex;
+		align-items: center;
+		position: relative;
+		width: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	} .carttable-header .th {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.375rem 0;
+		} .carttable-header .th:nth-child(1), .carttable-body .td:nth-child(1) {
+				width: 45%;
+				justify-content: flex-start;
+				min-width: 45%;
+				max-width: 45%;
+			}
+			.carttable-header .th:nth-child(2), .carttable-body .td:nth-child(2) {
+				width: 25%;
+				min-width: 25%;
+				max-width: 25%;
+			}
+			.carttable-header .th:nth-child(3), .carttable-body .td:nth-child(3) {
+				width: 25%;
+				min-width: 25%;
+				max-width: 25%;
+			}
+	.carttable-body {
+		width: 100%;
+		position: relative;
+		padding: 0.75rem 0;
+	} .carttable-body .td {
+			display: flex;
+			align-items: center;
+		}
+		.carttable-body img { max-width: 30%;
+			object-fit: contain;
+			object-position: center;
+			background-color: #EFF3F6;
+			padding: 1.4rem 0.375rem;
+			margin-right: 5px;
+		}.carttable-body .td:nth-child(4) {
+			width: 10%;
+			min-width: 10%;
+			max-width: 10%;
+		}
+.carttable-item {
+	display: flex;
+	align-items: center;
+	padding: 1.75rem 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+} .carttable-action {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #F3F2EE;
+		font-size: 1.2rem;
+		width: 42px;
+		height: 42px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		color: #000;
+		font-family: 'Onest-Bold';
+	}
+.input-group button {
+	top: 50%;
+	right: -20px;
+	width: 70px;
+	height: 80%;
+	padding: 0;
+	font-family: 'Onest-Light';
+	transform: translateY(-50%);
+	position: absolute;
+	font-size: 85%;
+}
+
+.cartinfo {
+	background-color: #EFF3F6;
+	padding: 1.2rem 1rem 0.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.customized-btn.no-bg {
+	color: #000 !important;
+	border-color: #000 !important;
+	box-shadow: none !important;
+}
+
+.bg-black {
+	color: #fff !important;
+	background-color: #000 !important;
+	box-shadow: none !important;
+}

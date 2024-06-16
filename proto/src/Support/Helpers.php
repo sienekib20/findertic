@@ -3,8 +3,9 @@
 namespace Sienekib\Proto\Support;
 
 use Sienekib\Proto\Proto;
+use Sienekib\Proto\Http\Request;
 
-class Helpers
+class Helpers extends Request
 {
     protected $viewPath = 'views/';
     protected $viewExtension = '.typos.php';
@@ -98,6 +99,14 @@ class Helpers
             return $this->partial($partialPath, array_merge($options, $partialOptions));
         }, $content);
 
+        $content = preg_replace_callback('/{{ route\((.*?)\) }}/', function ($matches) {
+            return $this->route(trim($matches[1], '"\''));
+        }, $content);
+
+        $content = preg_replace_callback('/{{ path\((.*?)\) }}/', function ($matches) {
+            return $this->path(trim($matches[1], '"\''));
+        }, $content);
+
         return $content;
     }
 
@@ -131,6 +140,49 @@ class Helpers
             return "Partial não encontrado: {$partial}";
         }
         return $this->renderView($partialView, $options);
+    }
+
+    /**
+     * Retorna uma rota específica seguido de parâmetro ou não.
+     *
+     * @param string $to Url da rota.
+     * @param mixed $param parâmetros da rota.
+     * @param string $with Opções para o partial, incluindo dados.
+     * @return string Conteúdo renderizado do partial.
+     */
+    private function route(string $to, $binginds = null): string
+    {
+    	if ($to === '/')
+    		return $to;
+
+    	$routeUrl = '/';
+
+    	if (str_contains($to, '.')) {
+    		$partsUrl = explode('.', $to);
+    		foreach($partsUrl as $part) {
+    			$routeUrl .= $part . '/';
+    		}
+    	} else {
+    		$routeUrl .= $to;
+    	}
+    	if ($binginds !== null) {
+    		$binginds = !is_array($binginds) ? [$binginds] : $binginds;
+    		foreach ($binginds as $param) {
+    			$routeUrl .= $param . '/';
+    		}
+    	}
+
+    	if ($routeUrl != '/')
+    		$routeUrl = ltrim($routeUrl, '/');
+
+    	$routeUrl = rtrim($routeUrl, '/');
+
+        return $routeUrl;
+    }
+
+    public function path() : string
+    {
+    	return ltrim($this->getUri(), '/');
     }
 
     /**

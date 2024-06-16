@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ asset('css/components/login.css') }}">
 
 <footer class="footer-4all">
-  <div class="container w-80">
+  <div class="container w-90">
 
     <div class="row">
       <div class="col-lg-4">

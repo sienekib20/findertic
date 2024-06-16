@@ -787,3 +787,34 @@ input::selection {
     background-color: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
 }
+
+.search-call {
+	top: 50%;
+	right: 0.75rem;
+	transform: translateY(-50%);
+	position: absolute;
+	color: #8A8A8A !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.375rem 0.75rem;
+	border: 1px solid transparent;
+	transition: border-color 0.25s ease-in-out;
+	border-radius: 0.25rem;
+} .search-call:hover {
+		background-color: #fff;
+		border-color: rgba(0, 0, 0, 0.1);
+	}
+.search-options {
+	top: 50%;
+	right: 0;
+	width: 240px;
+	/*padding: 0rem 1rem;*/
+	background-color: #fff;
+	transform: translateY(-50%);
+	position: absolute;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0 0.25rem 0.25rem 0;
+}
+
+
